@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+.logo{
+	font-size: 20px;
+}
+.main-container {
+	color: rgba(255,0,0.0.7);
+}
+#content {
+	color: crimson;
+}
+#sidemenu{
+	position: relative;
+	top: 20px;
+	right: 15px;
+	border: 1px solid black;
+}
+@keyframes animation1{
+	from{background-color: red;margin-left:0px}
+	to{background-color: yellow; margin-left: 200px;}
+}
+.changecolor{
+	animation-name: animation1;
+	animation-duration: 3s;
+}
+.lastest_article{
+	color: #0000ff;
+}
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+.green{
+	color: whitesmoke;
+	background-color: black;
+	background-image: url("images/227x112.jpg");
+	background-repeat: no-repeat;
+	babackground-position: center bottom;
+	text-align: justify;
+	font-family: 'Staatliches', cursive;
+	font-size: 18px;
+	font-weight: 800;
+	
+}
+a:link {
+	text-decoration: none;
+	text-transform: uppercase;
+	word-spacing: 20px;
+	text-align: center;
+	background: yellow;
+	color: white;
+}
+a:hover {
+	background-color: red;
+	color: black;
+	
+}
+a:visited, a:active{
+	background-color: saddlebrown;
+	color: azure;
+}
+#container{
+/*
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+*/
+	border: black 1px solid;
+	background-color: aquamarine;
+	padding: 25px 50px 10px 50px;
+}
+ul{
+	list-style-type: square;
+}
+li{
+	display: inline-block;
+	
+}
+.nwclss{
+	margin: auto;
+	width: 90%;
+	padding: 10px; 
+	min-width: 400px;
+	max-width: 600px;
+	border: 1px #FC0307 solid;
+	height: 250px;
+	overflow: scroll;
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #C1D9CA;
+	color: white;
+}
+#container{
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+header{
+	background-color: #183440;
+	color: white;
+	margin-top: 0;
+}
+header p{
+	padding-top: 0.75em;
+	padding-left: 0.5em;
+	font-weight: bold;
+	font-size: 1.25em;
+	margin-top: 0;
+}
+nav ul{
+	margin: 0 0 0.3em 0;
+	padding: 0.75em;
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 1em 2em 1em 2em;
+}
+main{
+	background-color: white;
+	border-radius: 1em;
+	float: left;
+	width: 60%;
+	overflow: auto;
+}
+section{
+	background-color: #183440;
+	display: block;
+/*	margin: 1.5em 0.5em 0.5em 0.5em;*/
+	margin: 2% 1% 1% 1%;
+/*	margin-top: 2%;*/
+	padding-bottom: 0.5%;
+}
+.title{
+	padding-top: 1em;
+	padding-left: 0.5em;
+	font-size: 1.25em;
+}
+article{
+	margin: 1% 1% 1% 1%;
+	padding: 2%;
+	border-radius: 2em;
+	background-color: white;
+	color: black;
+}
+aside{
+	margin-top: 1%;
+	padding: 2%;
+	border-radius: 2em;
+	background-color: #183440;
+	color: white;
+	width: 35%;
+	float: right;
+}
+footer{
+	clear: both;
+	text-align: center;
+	color: blue;
+	font-size: 90%;
+	padding: 1em;
+}

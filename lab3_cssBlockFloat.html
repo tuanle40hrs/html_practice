@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Blocks and Floatx</title>
+<link rel="stylesheet" href="style/lab3.css">
+</head>
+
+<body>
+<div id="container">
+  <nav>
+      <li><a href="lab3_Terminology.html">CSS Terminology</a></li>
+      &nbsp;&nbsp;
+      <li>CSS Syntax</li>
+      <li>CSS Declaration</li>
+      <li>CSS Styles for Blocks and Float</li>
+  </nav>
+  <main>
+    <h2 class="red-title">Block Versus Inline Content</h2>
+    <p><span class="emphasis">External style</span> also called linked styles aare separateled into a separate file with a css extension</p>
+    <p><span class="emphais">Embedded style</span>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aliquam doloribus sint quis adipisci <strong>cumque</strong> amet laudantium iure minus saepe dicta architecto quaerat, enim earum fuga, alias unde modi dolor! </p>
+    <p>
+      <spam class="emphasis">Inline styles</spam>
+      : are inserted in the opening tag using a style artibute </p>
+    <p><span class="emphasis">Rules</span> are also refereed to as styles and consist of a selector and a set of one ore more declarations.</p>
+    <p><span class="emphasis">A selector</span> "select" different areas in the html to style</p>
+    <h2 class="red-title">CSS Professionalism</h2>
+     <p><span class="emphasis">Rules</span> are also refereed to as styles and consist of a selector and a set of one ore more declarations.</p>
+    <p><span class="emphasis">Example 1:</span> Several imges posiliened prove that the img is an inline element - images sttay on the same line (inline)</p>
+   	<img src="https://picsum.photos/150/200" alt="">
+   	<img src="https://picsum.photos/150/200" alt="">
+   	<img src="https://picsum.photos/150/200" alt="">
+    <p>
+      <spam class="emphasis">Example 2:</spam>
+      One images followed by block content makes the image "appear" that it is also a block element. </p>
+      <img src="https://picsum.photos/150/200" alt="">
+      <p>Paragraph conent is block content which starts on its own line, its own block.</p>
+      <img src="https://picsum.photos/150/200" alt="" class="float-left">
+      <p>Block content that follows a left float. </p>
+      <div class="clear-float"></div>
+      <p><spam class="emphasis">Example 4:</spam> One image - float right. </p>
+      <img src="https://picsum.photos/150/250" alt="" class="float-right">
+      <p>Block content that follows a right float.</p>
+      <div class="font-format">float:left; and clear:both;</div>
+      <h2 class="red-title">Tricky CSS Declarations</h2>
+      <div class="font-format">font-family:Georgia, "Times New Roman", serif;</div>
+    <p><span class="emphasis">Inheritance</span> is that CSS properties can be inherited from a parent container. For example, paragraph and heading will inherit the font and color rules of the body selector. Properties that affect the placement of elements scuh as paddding, border and margin are not inheried.</p>
+    <div class="font-format">Float tips...</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor rerum nobis, at distinctio nihil. Sit omnis necessitatibus, blanditiis? Nobis odio totam illum eos ipsam quisquam fugiat laboriosam consequatur assumenda fuga?</p>
+    <div class="font-format">margin:10%</div>
+  </main>
+</div>
+</body>
+</html>

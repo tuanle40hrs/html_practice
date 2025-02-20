@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	height: 100%;
+}
+body{
+	background: linear-gradient(#337733, #EE7733);
+
+}
+#container{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+table{
+	width: 70%;
+}
+table, tr, td{
+	border: solid 0.1em black;
+	border-collapse: collapse;
+	padding: 0.3em;
+	text-align: center;
+	
+}
+th{
+	background-color: #000000;	
+	color: white;
+	text-align: center;
+	padding: 0.5em;
+}
+footer p{
+	text-align: center;
+}

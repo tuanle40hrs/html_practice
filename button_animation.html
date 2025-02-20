@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Button_animation</title>
+<style>
+	button{
+		width: 150px;
+		height: 80px;
+		background-color: transparent;
+		margin: 40px;
+		color: blueviolet;
+		font-size: 1.5em;
+		border: none;
+		cursor: pointer;
+		
+	}
+	#one{
+		border: 3px solid blueviolet;
+		
+	}
+	#one:hover{
+		background-color: blueviolet;
+		color: #fff;
+		transition-duration: 0.3s
+	}
+	
+	#two{
+		position: relative;
+	}
+	#two::after{
+		position: absolute;
+		content: "";
+		background-color: blueviolet;
+		top:0;
+		left:0;
+		width: 0%;
+		height: 2px;
+		transition-duration: 0.3s;
+	}
+	#two::before{
+		position: absolute;
+		content: "";
+		background-color: blueviolet;
+		bottom:0;
+		right:0;
+		width: 0%;
+		height: 2px;
+		transition-duration: 0.3s;
+	}
+	#two:hover::after,
+	#two:hover::before
+	{
+		width: 100%;
+	}
+	#three{
+		position: relative;
+/*		transition: 0.3s easy-in-out;*/
+	}
+	#three::after{
+		position:absolute;
+		content: "";
+		background-color: blueviolet;
+		width: 100%;
+		height: 0%;
+		top:0;
+		right: 0;
+		z-index: -1;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-in-out;
+	}
+	#three:hover{
+		color:#fff;
+	}
+	#three:hover::after{
+		height: 100%;
+	}
+	
+	#four{
+		position: relative;
+		transition-duration: 0.3s;
+	}
+	#four::after{
+		position: absolute;
+		content: "";
+		bottom:0;
+		right:0;
+		background-color: blueviolet;
+		transition: 0.3s;
+		z-index: -1;
+		width: 0%;
+		height: 0%;
+		
+	}
+	#four::before{
+		position: absolute;
+		content: "";
+		top:0;
+		left:0;
+		background-color: blueviolet;
+		transition: 0.3s;
+		z-index: -1;
+		width: 0%;
+		height: 0%;
+		
+	}
+	#four:hover{
+		color: #fff;
+	}
+	#four:hover::after,
+	#four:hover::before
+	{
+		width:100%;
+		height:100%;
+	}
+	
+	#five{
+		position: relative;
+	}
+	#five::after{
+		position: absolute;
+		content: '';
+		background-color: blueviolet;
+		top: 0;
+		left:0;
+		width: 0%;
+		height: 2px;
+		transition-duration:  0.3s;
+/*		z-index: -1;*/
+	}
+	#five::before{
+		position: absolute;
+		content: '';
+		background-color: blueviolet;
+		bottom: 0;
+		right:0;
+		width: 0%;
+		height: 2px;
+		transition-duration:  0.3s;
+	}
+	#five_span:after{
+		position: absolute;
+		content: '';
+		background-color: blueviolet;
+		bottom: 0;
+		left:0;
+		width: 2px;
+		height: 0%;
+		transition-duration:  0.3s;
+	}
+	#five_span:before{
+		position: absolute;
+		content: '';
+		background-color: blueviolet;
+		top: 0;
+		right:0;
+		width: 2px;
+		height: 0%;
+		transition-duration:  0.3s;
+	}
+	#five:hover::after,
+	#five:hover::before
+	{
+		width:100%;
+	}
+	#five:hover > #five_span::after,
+	#five:hover > #five_span::before
+	{
+		height:100%;
+	}
+	
+	#six{
+		position:relative;
+	}
+	#six::after{
+		position:absolute;
+		content: "";
+		background-color: blueviolet;
+		top:0;
+		left:0;
+		width:5px;
+		height: 100%;
+		z-index: -1;
+		transition-duration:  0.3s;
+	}
+	#six:hover{
+		color: #fff;
+	}
+	#six:hover::after{
+		width: 100%;
+	}
+	
+	#seven{
+		position: relative;
+		border: 2px solid blueviolet;
+	}
+	#seven::after{
+		position: absolute;
+		content: '';
+		top:0;
+		right:0;
+		width:0 ;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 0 0;
+		border-color: blueviolet  blueviolet transparent blueviolet;
+		transition-duration: 0.4s;
+	}
+	#seven::before{
+		position: absolute;
+		content: '';
+		bottom:0;
+		right:0;
+		width:0 ;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 0 0;
+		border-color: transparent transparent blueviolet transparent;
+		transition-duration: 0.4s;
+	}
+	#seven:hover > #text{
+		padding-right: 30px;
+		transition-duration: 0.4s;
+	}
+	#seven:hover::after{
+		border-width: 0 40px 40px 0;
+	}
+	#seven:hover::before{
+		border-width: 0 0 40px 40px;
+	}
+	#eight{
+		position: relative;
+	}
+	#eight::after{
+		position:absolute;
+		content: '';
+		background-color: blueviolet;
+		top:45%;
+		left:45%;
+		width: 0%;
+		height: 0%;
+		border-radius: 50%;
+		transition-duration: 1s;
+		z-index: -1;
+	}
+	#eight:hover::after{
+		width: 100%;
+		height: 100%;
+		top:0%;
+		left:0%;
+		border-radius: 3%;
+		
+		
+	}
+	#eight:hover{
+		color:#fff;
+		
+	}
+	
+	#moving{
+		position: absolute;
+		transition-duration: 0.3s;
+		background-image: linear-gradient(orangered, grey);
+	}
+	#moving:hover{
+		transform: translateX(20px);
+	}
+	#moving:hover::after{
+		transform: translate(400px,20px);
+	}
+	</style>
+
+</head>
+
+<body>
+<button id="one">Hover</button>
+<button id="two">Hover</button>
+<button id="three">Hover</button>
+<button id="four">Hover</button>
+<button id="five"><span id="five_span"></span>Hover</button>
+<button id="six">Hover</button>
+<button id="seven"><span id="text"></span>Hover</button>
+<button id="eight">Hover</button>
+<!--<hr>-->
+<button id="moving">Moving</button>
+</body>
+</html>

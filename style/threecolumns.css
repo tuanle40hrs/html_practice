@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+article{
+	float: left;
+	overflow: auto;
+	background-color: #C1D9CA;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
+}
+aside{
+	background-color: #fff;
+	border-radius: 0 5em 5em 5em;
+	box-shadow: 1em 1em 1em #4C4C4D;
+	padding: 1.5em;
+	margin: 1em;
+}

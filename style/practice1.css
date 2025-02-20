@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	margin: 0px 150px 0px 150px;
+	border: 1px red;
+}
+.header{
+	width: 960px;
+	height: 100px;
+	background-color: yellow;
+}
+.slide{
+	font-size: 48px;
+/*	font-weight: 900;*/
+	font-weight: bold;
+	
+}
+.header .menu{
+	height: 30px;
+	background-color: darkblue;
+	color: antiquewhite
+}
+
+.leftside{
+	width: 240px;
+	height: 150px;
+	background-color: blue;
+	float: left;
+	color: antiquewhite;
+}
+.rightside{
+	width: auto;
+	height: 100px;
+	background-color: palevioletred;
+	float: right;
+	color: orangered;
+	margin: 0px 150px 0px 0px;
+	justify-content: flex-end;
+	
+}
+.footer{
+	position: relative;
+	height: 70px;
+	width: 100%;
+	background-color: blueviolet;
+	border: red;
+}
